@@ -88,7 +88,9 @@ namespace WindowsFormsApplication1
 
         private void equals_Click(object sender, EventArgs e)
         {
-
+            /*Implementação Loka*/
+            Parser p = new Parser(richTextBox1.Text.ToString());
+            richTextBox1.Text = p.getValue().ToString();
         }
 
         private void richTextBox1_TextChanged(object sender, EventArgs e)
