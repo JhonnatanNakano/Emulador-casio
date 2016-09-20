@@ -129,7 +129,7 @@ namespace WindowsFormsApplication1
 
         private void multiplication_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text += "×";
+            richTextBox1.Text += "*";
         }
 
         //public void InitCustomLabelFont()

@@ -90,7 +90,7 @@ namespace WindowsFormsApplication1
 
         private int Mul_Div(string text)
         {
-            string[] numbersToMul = text.Split('×');
+            string[] numbersToMul = text.Split('*');
             int value = Int32.Parse(numbersToMul[0]);
             numbersToMul = numbersToMul.Skip(1).ToArray();
 
