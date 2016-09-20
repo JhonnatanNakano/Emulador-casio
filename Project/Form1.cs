@@ -294,16 +294,17 @@ namespace WindowsFormsApplication1
 
         private void sub_MouseDown(object sender, MouseEventArgs e)
         {
-            if (!equal_clicked)
+            if (e.Button == MouseButtons.Left)
             {
-                if (e.Button == MouseButtons.Left)
+                if (!equal_clicked)
+                {
                     boxEquacao.Text += "-";
-            }
-            else
-            {
-                if (e.Button == MouseButtons.Left)
+                }
+                else
+                {
                     boxEquacao.Text = boxResultado.Text + "-";
-                equal_clicked = false;
+                    equal_clicked = false;
+                }
             }
         }
 
@@ -328,18 +329,19 @@ namespace WindowsFormsApplication1
 
         private void delete_MouseDown(object sender, MouseEventArgs e)
         {
-            if (!equal_clicked)
+            if (e.Button == MouseButtons.Left)
             {
-                if (e.Button == MouseButtons.Left)
+                if (!equal_clicked)
+                {
                     if (boxEquacao.TextLength > 0)
                         boxEquacao.Text = boxEquacao.Text.Remove(boxEquacao.Text.Length - 1);
-            }
-            else
-            {
-                if (e.Button == MouseButtons.Left)
+                }
+                else
+                {
                     if (boxResultado.TextLength > 0)
                         boxEquacao.Text = boxResultado.Text.Remove(boxResultado.Text.Length - 1);
-                equal_clicked = false;
+                    equal_clicked = false;
+                }
             }
         }
 
@@ -383,27 +385,19 @@ namespace WindowsFormsApplication1
 
         private void negative_MouseDown(object sender, MouseEventArgs e)
         {
-            if (!equal_clicked)
+            if (e.Button == MouseButtons.Left)
             {
-                if (e.Button == MouseButtons.Left)
+                if (!equal_clicked)
+                {
                     boxEquacao.Text += "(-)";
-            }
-            else
-            {
-                if (e.Button == MouseButtons.Left)
+                }
+                else
+                {
                     boxEquacao.Text = boxResultado.Text + "(-)";
-                equal_clicked = false;
+                    equal_clicked = false;
+                }
             }
         }
-
-        private void toolTip1_Popup(object sender, PopupEventArgs e)
-        {
-
-        }
-
-        private void boxSuporte_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
