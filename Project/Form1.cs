@@ -61,155 +61,211 @@ namespace WindowsFormsApplication1
 
         private void a1_MouseDown(object sender, MouseEventArgs e)
         {
-            if (!equal_clicked)
+            if (e.Button == MouseButtons.Left)
             {
-                if (e.Button == MouseButtons.Left)
+                if (!equal_clicked)
+                {
                     boxEquacao.Text += "1";
-                else if (e.Button == MouseButtons.Right)
-                    boxEquacao.Text += "0";
-            }
-            else
-            {
-                if (e.Button == MouseButtons.Left)
+                }
+                else
+                {
                     boxEquacao.Text = boxResultado.Text + "1";
-                else if (e.Button == MouseButtons.Right)
-                    boxEquacao.Text = boxResultado.Text + "0";
-                equal_clicked = false;
+                    equal_clicked = false;
+                }
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                //boxSuporte.Text = "Soma: Utilizado para somar dois termos" +
+                //  "\n\nExemplo: 2 + 2, 2 / 3 + 3.14, ans + 4, √2 + sin 63°52'41";
             }
         }
 
         private void a2_MouseDown(object sender, MouseEventArgs e)
         {
-            if (!equal_clicked)
+            if (e.Button == MouseButtons.Left)
             {
-                if (e.Button == MouseButtons.Left)
+                if (!equal_clicked)
+                {
                     boxEquacao.Text += "2";
-            }
-            else
-            {
-                if (e.Button == MouseButtons.Left)
+                }
+                else
+                {
                     boxEquacao.Text = boxResultado.Text + "2";
-                equal_clicked = false;
+                    equal_clicked = false;
+                }
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                //boxSuporte.Text = "Soma: Utilizado para somar dois termos" +
+                //  "\n\nExemplo: 2 + 2, 2 / 3 + 3.14, ans + 4, √2 + sin 63°52'41";
             }
         }
 
         private void a3_MouseDown(object sender, MouseEventArgs e)
         {
-            if (!equal_clicked)
+            if (e.Button == MouseButtons.Left)
             {
-                if (e.Button == MouseButtons.Left)
+                if (!equal_clicked)
+                {
                     boxEquacao.Text += "3";
-            }
-            else
-            {
-                if (e.Button == MouseButtons.Left)
+                }
+                else
+                {
                     boxEquacao.Text = boxResultado.Text + "3";
-                equal_clicked = false;
+                    equal_clicked = false;
+                }
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                //boxSuporte.Text = "Soma: Utilizado para somar dois termos" +
+                //  "\n\nExemplo: 2 + 2, 2 / 3 + 3.14, ans + 4, √2 + sin 63°52'41";
             }
         }
 
         private void a4_MouseDown(object sender, MouseEventArgs e)
         {
-            if (!equal_clicked)
+            if (e.Button == MouseButtons.Left)
             {
-                if (e.Button == MouseButtons.Left)
+                if (!equal_clicked)
+                {
                     boxEquacao.Text += "4";
-            }
-            else
-            {
-                if (e.Button == MouseButtons.Left)
+                }
+                else
+                {
                     boxEquacao.Text = boxResultado.Text + "4";
-                equal_clicked = false;
+                    equal_clicked = false;
+                }
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                //boxSuporte.Text = "Soma: Utilizado para somar dois termos" +
+                //  "\n\nExemplo: 2 + 2, 2 / 3 + 3.14, ans + 4, √2 + sin 63°52'41";
             }
         }
 
         private void a5_MouseDown(object sender, MouseEventArgs e)
         {
-            if (!equal_clicked)
+            if (e.Button == MouseButtons.Left)
             {
-                if (e.Button == MouseButtons.Left)
+                if (!equal_clicked)
+                {
                     boxEquacao.Text += "5";
-            }
-            else
-            {
-                if (e.Button == MouseButtons.Left)
+                }
+                else
+                {
                     boxEquacao.Text = boxResultado.Text + "5";
-                equal_clicked = false;
+                    equal_clicked = false;
+                }
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                //boxSuporte.Text = "Soma: Utilizado para somar dois termos" +
+                //  "\n\nExemplo: 2 + 2, 2 / 3 + 3.14, ans + 4, √2 + sin 63°52'41";
             }
         }
 
         private void a6_MouseDown(object sender, MouseEventArgs e)
         {
-            if (!equal_clicked)
+            if (e.Button == MouseButtons.Left)
             {
-                if (e.Button == MouseButtons.Left)
+                if (!equal_clicked)
+                {
                     boxEquacao.Text += "6";
-            }
-            else
-            {
-                if (e.Button == MouseButtons.Left)
+                }
+                else
+                {
                     boxEquacao.Text = boxResultado.Text + "6";
-                equal_clicked = false;
+                    equal_clicked = false;
+                }
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                //boxSuporte.Text = "Soma: Utilizado para somar dois termos" +
+                //  "\n\nExemplo: 2 + 2, 2 / 3 + 3.14, ans + 4, √2 + sin 63°52'41";
             }
         }
 
         private void a7_MouseDown(object sender, MouseEventArgs e)
         {
-            if (!equal_clicked)
+            if (e.Button == MouseButtons.Left)
             {
-                if (e.Button == MouseButtons.Left)
+                if (!equal_clicked)
+                {
                     boxEquacao.Text += "7";
-            }
-            else
-            {
-                if (e.Button == MouseButtons.Left)
+                }
+                else
+                {
                     boxEquacao.Text = boxResultado.Text + "7";
-                equal_clicked = false;
+                    equal_clicked = false;
+                }
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                //boxSuporte.Text = "Soma: Utilizado para somar dois termos" +
+                //  "\n\nExemplo: 2 + 2, 2 / 3 + 3.14, ans + 4, √2 + sin 63°52'41";
             }
         }
 
         private void a8_MouseDown(object sender, MouseEventArgs e)
         {
-            if (!equal_clicked)
+            if (e.Button == MouseButtons.Left)
             {
-                if (e.Button == MouseButtons.Left)
+                if (!equal_clicked)
+                {
                     boxEquacao.Text += "8";
-            }
-            else
-            {
-                if (e.Button == MouseButtons.Left)
+                }
+                else
+                {
                     boxEquacao.Text = boxResultado.Text + "8";
-                equal_clicked = false;
+                    equal_clicked = false;
+                }
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                //boxSuporte.Text = "Soma: Utilizado para somar dois termos" +
+                //  "\n\nExemplo: 2 + 2, 2 / 3 + 3.14, ans + 4, √2 + sin 63°52'41";
             }
         }
 
         private void a9_MouseDown(object sender, MouseEventArgs e)
         {
-            if (!equal_clicked)
+            if (e.Button == MouseButtons.Left)
             {
-                if (e.Button == MouseButtons.Left)
+                if (!equal_clicked)
+                {
                     boxEquacao.Text += "9";
-            }
-            else
-            {
-                if (e.Button == MouseButtons.Left)
+                }
+                else
+                {
                     boxEquacao.Text = boxResultado.Text + "9";
-                equal_clicked = false;
+                    equal_clicked = false;
+                }
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                //boxSuporte.Text = "Soma: Utilizado para somar dois termos" +
+                //  "\n\nExemplo: 2 + 2, 2 / 3 + 3.14, ans + 4, √2 + sin 63°52'41";
             }
         }
 
         private void a0_MouseDown(object sender, MouseEventArgs e)
         {
-            if (!equal_clicked)
+            if (e.Button == MouseButtons.Left)
             {
-                if (e.Button == MouseButtons.Left)
+                if (!equal_clicked)
+                {
                     boxEquacao.Text += "0";
-            }
-            else
-            {
-                if (e.Button == MouseButtons.Left)
+                }
+                else
+                {
                     boxEquacao.Text = boxResultado.Text + "0";
-                equal_clicked = false;
+                    equal_clicked = false;
+                }
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                //boxSuporte.Text = "Soma: Utilizado para somar dois termos" +
+                //  "\n\nExemplo: 2 + 2, 2 / 3 + 3.14, ans + 4, √2 + sin 63°52'41";
             }
         }
 
