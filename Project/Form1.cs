@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Drawing.Text;
-//using System.Resources;
 
 namespace WindowsFormsApplication1
 {
@@ -17,14 +16,15 @@ namespace WindowsFormsApplication1
 
         public Form1()
         {
+            //this.SetStyle(ControlStyles.SupportsTransparentBackColor, true);
             InitializeComponent();
             PrivateFontCollection pfc = new PrivateFontCollection();
-            //pfc.AddFontFile("C:\\Users\\Lucas\\Source\\Repos\\Emulador-casio\\Project\\Resources\\digital7italic.ttf");
-            //ResourceManager resources = new ResourceManager("WindowsFormsApplication1.Properties.Resources);
-            //string myString = resources.GetString("myString");
-            //fc.AddFontFile(resources.GetObject("digital7talic"));
-            //richTextBox1.Font = new Font(pfc.Families[0], 16, FontStyle.Regular);
+            pfc.AddFontFile(System.IO.Path.Combine(Application.StartupPath, "Resources\\digital7italic.ttf"));
+            richTextBox1.Font = new Font(pfc.Families[0], 24, FontStyle.Regular);
 
+            //this.SetStyle(ControlStyles.SupportsTransparentBackColor, true);
+            //this.TransparencyKey = Color.FromKnownColor(KnownColor.Control);
+            //this.Update();
 
             Controls.Add(a1);
             Controls.Add(a2);
