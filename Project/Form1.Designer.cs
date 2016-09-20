@@ -299,7 +299,6 @@ namespace WindowsFormsApplication1
             this.boxSuporte.TabIndex = 22;
             this.boxSuporte.Text = "Pressione com o botão direito em qualquer botão para ver sua definição e exemplos" +
     " de uso.";
-            this.boxSuporte.TextChanged += new System.EventHandler(this.boxSuporte_TextChanged);
             // 
             // Form1
             // 
