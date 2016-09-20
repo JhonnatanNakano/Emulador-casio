@@ -38,6 +38,7 @@ namespace WindowsFormsApplication1
             Controls.Add(a0);
             Controls.Add(sum);
             Controls.Add(sub);
+            Controls.Add(multiplication);
             Controls.Add(AC);
             Controls.Add(delete);
             Controls.Add(equals);
@@ -124,6 +125,11 @@ namespace WindowsFormsApplication1
         {
             richTextBox1.Text = 
             richTextBox1.Text.Remove(richTextBox1.Text.Length - 1);
+        }
+
+        private void multiplication_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text += "×";
         }
 
         //public void InitCustomLabelFont()
