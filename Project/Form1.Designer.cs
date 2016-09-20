@@ -294,8 +294,8 @@ namespace WindowsFormsApplication1
             this.boxSuporte.Location = new System.Drawing.Point(481, 73);
             this.boxSuporte.Name = "boxSuporte";
             this.boxSuporte.ReadOnly = true;
-            this.boxSuporte.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.boxSuporte.Size = new System.Drawing.Size(239, 661);
+            this.boxSuporte.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical;
+            this.boxSuporte.Size = new System.Drawing.Size(239, 680);
             this.boxSuporte.TabIndex = 22;
             this.boxSuporte.Text = "Pressione com o botão direito em qualquer botão para ver sua definição e exemplos" +
     " de uso.";
