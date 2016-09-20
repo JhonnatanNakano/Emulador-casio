@@ -38,6 +38,8 @@ namespace WindowsFormsApplication1
             Controls.Add(a0);
             Controls.Add(sum);
             Controls.Add(sub);
+            Controls.Add(AC);
+            Controls.Add(delete);
             Controls.Add(equals);
         }
 
@@ -91,21 +93,14 @@ namespace WindowsFormsApplication1
             richTextBox1.Text += "9";
         }
 
+        private void a0_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text += "0";
+        }
+
         private void sum_Click(object sender, EventArgs e)
         {
             richTextBox1.Text += "+";
-        }
-
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            /*Implementação Loka*/
-            Parser p = new Parser(richTextBox1.Text.ToString());
-            richTextBox1.Text = p.getValue().ToString();
         }
 
         private void sub_Click(object sender, EventArgs e)
@@ -113,9 +108,22 @@ namespace WindowsFormsApplication1
             richTextBox1.Text += "-";
         }
 
-        private void a0_Click(object sender, EventArgs e)
+        private void equals_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text += "0";
+            /*Implementação Loka*/
+            Parser p = new Parser(richTextBox1.Text.ToString());
+            richTextBox1.Text = p.getValue().ToString();
+        }
+
+        private void AC_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = "";
+        }
+
+        private void delete_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text = 
+            richTextBox1.Text.Remove(richTextBox1.Text.Length - 1);
         }
 
         //public void InitCustomLabelFont()
