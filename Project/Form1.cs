@@ -420,8 +420,9 @@ namespace WindowsFormsApplication1
             }
             else if (e.Button == MouseButtons.Right)
             {
-                //boxSuporte.Text = "Multiplicação: Utilizado para multiplicar dois termos" +
-                //    "\n\nExemplo: 2 * 2, 2/3 * 3.14, ans * 4, √2 * sin 63°52'41";
+                boxSuporte.Text = "Divisão: Utilizado para dividir dois termos" +
+                    "\n\nExemplo: 2 / 2, ans / 4, √2 / sin 63°52'41\""+
+                    "\n\nExceção: Não pode dividir um termo por zero";
             }
         }
 
@@ -438,6 +439,11 @@ namespace WindowsFormsApplication1
                     boxEquacao.Text = boxResultado.Text + "(-)";
                     equal_clicked = false;
                 }
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                boxSuporte.Text = "Normal: Para uso de números negativos" +
+                    "\n\nALPHA: Variável A, pode ser usada para armazenar dados, constantes, resultados e outros valores.";
             }
         }
         
