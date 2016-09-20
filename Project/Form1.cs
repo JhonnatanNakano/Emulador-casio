@@ -7,7 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-//using System.Drawing.Text;
+using System.Drawing.Text;
+//using System.Resources;
 
 namespace WindowsFormsApplication1
 {
@@ -17,7 +18,13 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
-            //InitCustomLabelFont();
+            PrivateFontCollection pfc = new PrivateFontCollection();
+            //pfc.AddFontFile("C:\\Users\\Lucas\\Source\\Repos\\Emulador-casio\\Project\\Resources\\digital7italic.ttf");
+            //ResourceManager resources = new ResourceManager("WindowsFormsApplication1.Properties.Resources);
+            //string myString = resources.GetString("myString");
+            //fc.AddFontFile(resources.GetObject("digital7talic"));
+            //richTextBox1.Font = new Font(pfc.Families[0], 16, FontStyle.Regular);
+
 
             Controls.Add(a1);
             Controls.Add(a2);

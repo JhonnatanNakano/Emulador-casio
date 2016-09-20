@@ -39,17 +39,17 @@
             this.a4 = new System.Windows.Forms.Button();
             this.a7 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.equals = new System.Windows.Forms.Button();
             this.sub = new System.Windows.Forms.Button();
             this.a0 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // a1
             // 
             this.a1.BackColor = System.Drawing.Color.White;
-            this.a1.Location = new System.Drawing.Point(84, 635);
+            this.a1.Location = new System.Drawing.Point(82, 633);
             this.a1.Name = "a1";
             this.a1.Size = new System.Drawing.Size(42, 31);
             this.a1.TabIndex = 1;
@@ -60,7 +60,7 @@
             // a2
             // 
             this.a2.BackColor = System.Drawing.Color.Transparent;
-            this.a2.Location = new System.Drawing.Point(146, 635);
+            this.a2.Location = new System.Drawing.Point(145, 633);
             this.a2.Name = "a2";
             this.a2.Size = new System.Drawing.Size(42, 31);
             this.a2.TabIndex = 3;
@@ -71,7 +71,7 @@
             // sum
             // 
             this.sum.BackColor = System.Drawing.Color.Transparent;
-            this.sum.Location = new System.Drawing.Point(266, 635);
+            this.sum.Location = new System.Drawing.Point(270, 633);
             this.sum.Name = "sum";
             this.sum.Size = new System.Drawing.Size(44, 31);
             this.sum.TabIndex = 4;
@@ -83,7 +83,7 @@
             // 
             this.a3.BackColor = System.Drawing.Color.Transparent;
             this.a3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.a3.Location = new System.Drawing.Point(206, 635);
+            this.a3.Location = new System.Drawing.Point(206, 633);
             this.a3.Name = "a3";
             this.a3.Size = new System.Drawing.Size(46, 31);
             this.a3.TabIndex = 5;
@@ -93,7 +93,7 @@
             // 
             // a6
             // 
-            this.a6.Location = new System.Drawing.Point(206, 580);
+            this.a6.Location = new System.Drawing.Point(207, 578);
             this.a6.Name = "a6";
             this.a6.Size = new System.Drawing.Size(46, 31);
             this.a6.TabIndex = 6;
@@ -103,7 +103,7 @@
             // 
             // a9
             // 
-            this.a9.Location = new System.Drawing.Point(206, 528);
+            this.a9.Location = new System.Drawing.Point(207, 525);
             this.a9.Name = "a9";
             this.a9.Size = new System.Drawing.Size(46, 29);
             this.a9.TabIndex = 7;
@@ -113,7 +113,7 @@
             // 
             // a5
             // 
-            this.a5.Location = new System.Drawing.Point(146, 580);
+            this.a5.Location = new System.Drawing.Point(145, 578);
             this.a5.Name = "a5";
             this.a5.Size = new System.Drawing.Size(42, 31);
             this.a5.TabIndex = 8;
@@ -123,7 +123,7 @@
             // 
             // a8
             // 
-            this.a8.Location = new System.Drawing.Point(146, 527);
+            this.a8.Location = new System.Drawing.Point(145, 524);
             this.a8.Name = "a8";
             this.a8.Size = new System.Drawing.Size(42, 30);
             this.a8.TabIndex = 9;
@@ -133,7 +133,7 @@
             // 
             // a4
             // 
-            this.a4.Location = new System.Drawing.Point(84, 580);
+            this.a4.Location = new System.Drawing.Point(82, 578);
             this.a4.Name = "a4";
             this.a4.Size = new System.Drawing.Size(42, 31);
             this.a4.TabIndex = 10;
@@ -143,7 +143,7 @@
             // 
             // a7
             // 
-            this.a7.Location = new System.Drawing.Point(84, 527);
+            this.a7.Location = new System.Drawing.Point(82, 524);
             this.a7.Name = "a7";
             this.a7.Size = new System.Drawing.Size(42, 31);
             this.a7.TabIndex = 11;
@@ -154,30 +154,18 @@
             // richTextBox1
             // 
             this.richTextBox1.Font = new System.Drawing.Font("Courier New", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(102, 170);
+            this.richTextBox1.Location = new System.Drawing.Point(94, 165);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(220, 44);
             this.richTextBox1.TabIndex = 13;
             this.richTextBox1.Text = "";
             this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Enabled = false;
-            this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.calc2;
-            this.pictureBox1.Location = new System.Drawing.Point(-2, -2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(468, 784);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // equals
             // 
             this.equals.BackColor = System.Drawing.Color.Transparent;
             this.equals.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.equals.Location = new System.Drawing.Point(325, 689);
+            this.equals.Location = new System.Drawing.Point(334, 687);
             this.equals.Margin = new System.Windows.Forms.Padding(0);
             this.equals.Name = "equals";
             this.equals.Size = new System.Drawing.Size(45, 31);
@@ -189,7 +177,7 @@
             // sub
             // 
             this.sub.BackColor = System.Drawing.Color.Transparent;
-            this.sub.Location = new System.Drawing.Point(324, 633);
+            this.sub.Location = new System.Drawing.Point(334, 631);
             this.sub.Margin = new System.Windows.Forms.Padding(0);
             this.sub.Name = "sub";
             this.sub.Size = new System.Drawing.Size(46, 33);
@@ -201,13 +189,25 @@
             // a0
             // 
             this.a0.BackColor = System.Drawing.Color.Transparent;
-            this.a0.Location = new System.Drawing.Point(84, 689);
+            this.a0.Location = new System.Drawing.Point(82, 687);
             this.a0.Name = "a0";
             this.a0.Size = new System.Drawing.Size(42, 31);
             this.a0.TabIndex = 16;
             this.a0.Text = "0";
             this.a0.UseVisualStyleBackColor = false;
             this.a0.Click += new System.EventHandler(this.a0_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Enabled = false;
+            this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.calc2;
+            this.pictureBox1.Location = new System.Drawing.Point(2, -6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(468, 784);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Form1
             // 

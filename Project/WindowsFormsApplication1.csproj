@@ -75,6 +75,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\digital7italic.ttf" />
     <None Include="Resources\The Display St.ttf" />
   </ItemGroup>
   <ItemGroup>
