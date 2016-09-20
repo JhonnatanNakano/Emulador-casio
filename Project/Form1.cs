@@ -20,11 +20,11 @@ namespace WindowsFormsApplication1
             InitializeComponent();
             PrivateFontCollection pfc = new PrivateFontCollection();
             pfc.AddFontFile(System.IO.Path.Combine(Application.StartupPath, "Resources\\digital7italic.ttf"));
-            richTextBox1.Font = new Font(pfc.Families[0], 24, FontStyle.Regular);
 
-            //this.SetStyle(ControlStyles.SupportsTransparentBackColor, true);
-            //this.TransparencyKey = Color.FromKnownColor(KnownColor.Control);
-            //this.Update();
+            //boxResultado.Font = new Font(pfc.Families[0], 22, FontStyle.Regular);
+            richTextBox1.Font = new Font(pfc.Families[0], 22, FontStyle.Regular);
+            boxResultado.Font = new Font(pfc.Families[0], 28, FontStyle.Regular);
+
 
             Controls.Add(a1);
             Controls.Add(a2);
@@ -112,7 +112,8 @@ namespace WindowsFormsApplication1
         {
             /*Implementação Loka*/
             Parser p = new Parser(richTextBox1.Text.ToString());
-            richTextBox1.Text = p.getValue().ToString();
+            boxResultado.Text = p.getValue().ToString();
+
         }
 
         private void AC_Click(object sender, EventArgs e)
@@ -124,6 +125,11 @@ namespace WindowsFormsApplication1
         {
             richTextBox1.Text = 
             richTextBox1.Text.Remove(richTextBox1.Text.Length - 1);
+        }
+
+        private void richTextBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         //public void InitCustomLabelFont()

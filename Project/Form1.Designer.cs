@@ -1,4 +1,6 @@
-﻿namespace WindowsFormsApplication1
+﻿using System.Windows.Forms;
+
+namespace WindowsFormsApplication1
 {
     partial class Form1
     {
@@ -45,6 +47,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.AC = new System.Windows.Forms.Button();
             this.delete = new System.Windows.Forms.Button();
+            this.boxResultado = new System.Windows.Forms.RichTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -158,10 +161,11 @@
             this.richTextBox1.BackColor = System.Drawing.Color.White;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Courier New", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(82, 124);
+            this.richTextBox1.Location = new System.Drawing.Point(86, 129);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(235, 44);
+            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.richTextBox1.Size = new System.Drawing.Size(292, 35);
             this.richTextBox1.TabIndex = 13;
             this.richTextBox1.Text = "";
             // 
@@ -233,11 +237,28 @@
             this.delete.UseVisualStyleBackColor = true;
             this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
+            // boxResultado
+            // 
+            this.boxResultado.BackColor = System.Drawing.SystemColors.Window;
+            this.boxResultado.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.boxResultado.Font = new System.Drawing.Font("Courier New", 20F);
+            this.boxResultado.Location = new System.Drawing.Point(86, 170);
+            this.boxResultado.Multiline = false;
+            this.boxResultado.Name = "boxResultado";
+            this.boxResultado.ReadOnly = true;
+            this.boxResultado.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.boxResultado.Size = new System.Drawing.Size(274, 39);
+            this.boxResultado.TabIndex = 19;
+            this.boxResultado.Text = "";
+            this.boxResultado.WordWrap = false;
+            this.boxResultado.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(748, 778);
+            this.Controls.Add(this.boxResultado);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.AC);
             this.Controls.Add(this.a0);
@@ -281,6 +302,7 @@
         private System.Windows.Forms.Button a0;
         private System.Windows.Forms.Button AC;
         private System.Windows.Forms.Button delete;
+        private System.Windows.Forms.RichTextBox boxResultado;
     }
 }
 
