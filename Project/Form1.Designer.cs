@@ -156,8 +156,10 @@
             // 
             // richTextBox1
             // 
+            this.richTextBox1.BackColor = System.Drawing.Color.White;
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Courier New", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(94, 165);
+            this.richTextBox1.Location = new System.Drawing.Point(82, 124);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(235, 44);
@@ -204,7 +206,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Enabled = false;
-            this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.calc2;
+            this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.calc21;
             this.pictureBox1.Location = new System.Drawing.Point(2, -6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(468, 784);
