@@ -129,28 +129,41 @@ namespace WindowsFormsApplication1
         private int Mul_Div(string text)
         {
             string[] numbersToMul = text.Split('*');
-            //int value = Int32.Parse(numbersToMul[0]);
             int i,value;
-            string aux;
-            i = numbersToMul[0].IndexOf("(_)");
 
-            if (i == -1)
-                value = Int32.Parse(numbersToMul[0]);
-            else
-            {
-                value = soma_negativos(numbersToMul[0]);
-            }
-            
-            numbersToMul = numbersToMul.Skip(1).ToArray();
+            value = 1;
            
             foreach(string mul in numbersToMul)
             {
+                string[] numbersToDiv = mul.Split('/');
+                int div_value;
+                i = numbersToDiv[0].IndexOf("(_)");
+
+                if (i == -1)
+                    div_value = Int32.Parse(numbersToDiv[0]);
+                else
+                {
+                    div_value = soma_negativos(numbersToDiv[0]);
+                }
+
+                numbersToDiv = numbersToDiv.Skip(1).ToArray();
+                foreach(string div in numbersToDiv)
+                {
+                    i = div.IndexOf("(_)");
+                    if (i == -1)
+                        div_value /= Int32.Parse(div);
+                    else
+                    {
+                        div_value /= soma_negativos(div);
+                    }
+                }
+
                 i = mul.IndexOf("(_)");
                 if(i == -1)
-                    value *= Int32.Parse(mul);
+                    value *= div_value;
                 else 
                 {
-                    value *= soma_negativos(mul);
+                    value *= div_value;
                 }
             }
 

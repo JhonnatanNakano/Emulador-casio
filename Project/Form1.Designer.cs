@@ -52,6 +52,7 @@ namespace WindowsFormsApplication1
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.boxSuporte = new System.Windows.Forms.RichTextBox();
+            this.division = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -300,12 +301,23 @@ namespace WindowsFormsApplication1
             this.boxSuporte.Text = "Pressione com o botão direito em qualquer botão para ver sua definição e exemplos" +
     " de uso.";
             // 
+            // division
+            // 
+            this.division.Location = new System.Drawing.Point(334, 578);
+            this.division.Name = "division";
+            this.division.Size = new System.Drawing.Size(46, 30);
+            this.division.TabIndex = 23;
+            this.division.Text = "div";
+            this.division.UseVisualStyleBackColor = true;
+            this.division.MouseDown += new System.Windows.Forms.MouseEventHandler(this.division_MouseDown);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(748, 778);
+            this.Controls.Add(this.division);
             this.Controls.Add(this.boxSuporte);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.negative);
@@ -360,6 +372,7 @@ namespace WindowsFormsApplication1
         private Button negative;
         private PictureBox pictureBox2;
         private RichTextBox boxSuporte;
+        private Button division;
     }
 }
 
