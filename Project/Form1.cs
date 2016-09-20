@@ -44,72 +44,86 @@ namespace WindowsFormsApplication1
             Controls.Add(equals);
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
         {
 
         }
 
-        private void a1_Click(object sender, EventArgs e)
+        private void a1_MouseDown(object sender, MouseEventArgs e)
         {
-            richTextBox1.Text += "1";
+            if (e.Button == MouseButtons.Left)
+                richTextBox1.Text += "1";
+            else if (e.Button == MouseButtons.Right)
+                richTextBox1.Text += "0";
         }
 
-        private void a2_Click(object sender, EventArgs e)
+        private void a2_MouseDown(object sender, MouseEventArgs e)
         {
-            richTextBox1.Text += "2";
+            if(e.Button == MouseButtons.Left)
+                richTextBox1.Text += "2";
         }
 
-        private void a3_Click(object sender, EventArgs e)
+        private void a3_MouseDown(object sender, MouseEventArgs e)
         {
-            richTextBox1.Text += "3";
+            if (e.Button == MouseButtons.Left)
+                richTextBox1.Text += "3";
         }
 
-        private void a4_Click(object sender, EventArgs e)
+        private void a4_MouseDown(object sender, MouseEventArgs e)
         {
-            richTextBox1.Text += "4";
+            if (e.Button == MouseButtons.Left)
+                richTextBox1.Text += "4";
         }
 
-        private void a5_Click(object sender, EventArgs e)
+        private void a5_MouseDown(object sender, MouseEventArgs e)
         {
-            richTextBox1.Text += "5";
+            if (e.Button == MouseButtons.Left)
+                richTextBox1.Text += "5";
         }
 
-        private void a6_Click(object sender, EventArgs e)
+        private void a6_MouseDown(object sender, MouseEventArgs e)
         {
-            richTextBox1.Text += "6";
+            if (e.Button == MouseButtons.Left)
+                richTextBox1.Text += "6";
         }
 
-        private void a7_Click(object sender, EventArgs e)
+        private void a7_MouseDown(object sender, MouseEventArgs e)
         {
-            richTextBox1.Text += "7";
+            if (e.Button == MouseButtons.Left)
+                richTextBox1.Text += "7";
         }
 
-        private void a8_Click(object sender, EventArgs e)
+        private void a8_MouseDown(object sender, MouseEventArgs e)
         {
-            richTextBox1.Text += "8";
+            if (e.Button == MouseButtons.Left)
+                richTextBox1.Text += "8";
         }
 
-        private void a9_Click(object sender, EventArgs e)
+        private void a9_MouseDown(object sender, MouseEventArgs e)
         {
-            richTextBox1.Text += "9";
+            if (e.Button == MouseButtons.Left)
+                richTextBox1.Text += "9";
         }
 
-        private void a0_Click(object sender, EventArgs e)
+        private void a0_MouseDown(object sender, MouseEventArgs e)
         {
-            richTextBox1.Text += "0";
+            if (e.Button == MouseButtons.Left)
+                richTextBox1.Text += "0";
         }
 
-        private void sum_Click(object sender, EventArgs e)
+        private void sum_MouseDown(object sender, MouseEventArgs e)
         {
-            richTextBox1.Text += "+";
+            if (e.Button == MouseButtons.Left)
+                richTextBox1.Text += "+";
         }
 
-        private void sub_Click(object sender, EventArgs e)
+        private void sub_MouseDown(object sender, MouseEventArgs e)
         {
-            richTextBox1.Text += "-";
+            if (e.Button == MouseButtons.Left)
+                richTextBox1.Text += "-";
         }
 
-        private void equals_Click(object sender, EventArgs e)
+        private void equals_MouseDown(object sender, MouseEventArgs e)
         {
             /*Implementação Loka*/
             Parser p = new Parser(richTextBox1.Text.ToString());
@@ -117,21 +131,28 @@ namespace WindowsFormsApplication1
 
         }
 
-        private void AC_Click(object sender, EventArgs e)
+        private void AC_MouseDown(object sender, MouseEventArgs e)
         {
-            richTextBox1.Text = "";
-            boxResultado.Text = "0";
+            if (e.Button == MouseButtons.Left)
+            {
+                richTextBox1.Text = "";
+                boxResultado.Text = "0";
+            }
         }
 
-        private void delete_Click(object sender, EventArgs e)
+        private void delete_MouseDown(object sender, MouseEventArgs e)
         {
-            if(richTextBox1.TextLength>0)
-                richTextBox1.Text = richTextBox1.Text.Remove(richTextBox1.Text.Length - 1);
+            if (e.Button == MouseButtons.Left)
+            {
+                if (richTextBox1.TextLength > 0)
+                    richTextBox1.Text = richTextBox1.Text.Remove(richTextBox1.Text.Length - 1);
+            }
         }
 
-        private void multiplication_Click(object sender, EventArgs e)
+        private void multiplication_MouseDown(object sender, MouseEventArgs e)
         {
-            richTextBox1.Text += "*";
+            if (e.Button == MouseButtons.Left)
+                richTextBox1.Text += "*";
         }
 
         private void richTextBox2_TextChanged(object sender, EventArgs e)
@@ -139,20 +160,7 @@ namespace WindowsFormsApplication1
 
         }
 
-        //public void InitCustomLabelFont()
-        //{
-        //    PointF pointF = new PointF(10, 0);
-        //    SolidBrush solidBrush = new SolidBrush(Color.Black);
 
-        //    int count = 0;
-        //    string familyName = "";
-        //    string familyNameAndStyle;
-        //    FontFamily[] fontFamilies;
-        //    PrivateFontCollection privateFontCollection = new PrivateFontCollection();
-
-        //    privateFontCollection.AddFontFile("c:\users\jho\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\Resources\The Display St.ttf");
-
-        //    richTextBox1.Font = new Font(privateFontCollection.Families[0], richTextBox1.Font.Size);
-        //}
+        
     }
 }

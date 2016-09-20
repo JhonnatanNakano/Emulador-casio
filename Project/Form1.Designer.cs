@@ -61,7 +61,7 @@ namespace WindowsFormsApplication1
             this.a1.TabIndex = 1;
             this.a1.Text = "1";
             this.a1.UseVisualStyleBackColor = false;
-            this.a1.Click += new System.EventHandler(this.a1_Click);
+            this.a1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.a1_MouseDown);
             // 
             // a2
             // 
@@ -72,7 +72,7 @@ namespace WindowsFormsApplication1
             this.a2.TabIndex = 3;
             this.a2.Text = "2";
             this.a2.UseVisualStyleBackColor = false;
-            this.a2.Click += new System.EventHandler(this.a2_Click);
+            this.a2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.a2_MouseDown);
             // 
             // sum
             // 
@@ -83,7 +83,7 @@ namespace WindowsFormsApplication1
             this.sum.TabIndex = 4;
             this.sum.Text = "sum";
             this.sum.UseVisualStyleBackColor = false;
-            this.sum.Click += new System.EventHandler(this.sum_Click);
+            this.sum.MouseDown += new System.Windows.Forms.MouseEventHandler(this.sum_MouseDown);
             // 
             // a3
             // 
@@ -95,7 +95,7 @@ namespace WindowsFormsApplication1
             this.a3.TabIndex = 5;
             this.a3.Text = "3";
             this.a3.UseVisualStyleBackColor = false;
-            this.a3.Click += new System.EventHandler(this.a3_Click);
+            this.a3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.a3_MouseDown);
             // 
             // a6
             // 
@@ -105,7 +105,7 @@ namespace WindowsFormsApplication1
             this.a6.TabIndex = 6;
             this.a6.Text = "6";
             this.a6.UseVisualStyleBackColor = true;
-            this.a6.Click += new System.EventHandler(this.a6_Click);
+            this.a6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.a6_MouseDown);
             // 
             // a9
             // 
@@ -115,7 +115,7 @@ namespace WindowsFormsApplication1
             this.a9.TabIndex = 7;
             this.a9.Text = "9";
             this.a9.UseVisualStyleBackColor = true;
-            this.a9.Click += new System.EventHandler(this.a9_Click);
+            this.a9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.a9_MouseDown);
             // 
             // a5
             // 
@@ -125,7 +125,7 @@ namespace WindowsFormsApplication1
             this.a5.TabIndex = 8;
             this.a5.Text = "5";
             this.a5.UseVisualStyleBackColor = true;
-            this.a5.Click += new System.EventHandler(this.a5_Click);
+            this.a5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.a5_MouseDown);
             // 
             // a8
             // 
@@ -135,7 +135,7 @@ namespace WindowsFormsApplication1
             this.a8.TabIndex = 9;
             this.a8.Text = "8";
             this.a8.UseVisualStyleBackColor = true;
-            this.a8.Click += new System.EventHandler(this.a8_Click);
+            this.a8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.a8_MouseDown);
             // 
             // a4
             // 
@@ -145,7 +145,7 @@ namespace WindowsFormsApplication1
             this.a4.TabIndex = 10;
             this.a4.Text = "4";
             this.a4.UseVisualStyleBackColor = true;
-            this.a4.Click += new System.EventHandler(this.a4_Click);
+            this.a4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.a4_MouseDown);
             // 
             // a7
             // 
@@ -155,7 +155,7 @@ namespace WindowsFormsApplication1
             this.a7.TabIndex = 11;
             this.a7.Text = "7";
             this.a7.UseVisualStyleBackColor = true;
-            this.a7.Click += new System.EventHandler(this.a7_Click);
+            this.a7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.a7_MouseDown);
             // 
             // richTextBox1
             // 
@@ -181,7 +181,7 @@ namespace WindowsFormsApplication1
             this.equals.TabIndex = 14;
             this.equals.Text = "equal";
             this.equals.UseVisualStyleBackColor = false;
-            this.equals.Click += new System.EventHandler(this.equals_Click);
+            this.equals.MouseDown += new System.Windows.Forms.MouseEventHandler(this.equals_MouseDown);
             // 
             // sub
             // 
@@ -193,7 +193,7 @@ namespace WindowsFormsApplication1
             this.sub.TabIndex = 15;
             this.sub.Text = "sub";
             this.sub.UseVisualStyleBackColor = false;
-            this.sub.Click += new System.EventHandler(this.sub_Click);
+            this.sub.MouseDown += new System.Windows.Forms.MouseEventHandler(this.sub_MouseDown);
             // 
             // a0
             // 
@@ -204,7 +204,7 @@ namespace WindowsFormsApplication1
             this.a0.TabIndex = 16;
             this.a0.Text = "0";
             this.a0.UseVisualStyleBackColor = false;
-            this.a0.Click += new System.EventHandler(this.a0_Click);
+            this.a0.MouseDown += new System.Windows.Forms.MouseEventHandler(this.a0_MouseDown);
             // 
             // pictureBox1
             // 
@@ -216,7 +216,7 @@ namespace WindowsFormsApplication1
             this.pictureBox1.Size = new System.Drawing.Size(468, 784);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
             // 
             // AC
             // 
@@ -226,7 +226,7 @@ namespace WindowsFormsApplication1
             this.AC.TabIndex = 17;
             this.AC.Text = "AC";
             this.AC.UseVisualStyleBackColor = true;
-            this.AC.Click += new System.EventHandler(this.AC_Click);
+            this.AC.MouseDown += new System.Windows.Forms.MouseEventHandler(this.AC_MouseDown);
             // 
             // delete
             // 
@@ -236,7 +236,7 @@ namespace WindowsFormsApplication1
             this.delete.TabIndex = 18;
             this.delete.Text = "DEL";
             this.delete.UseVisualStyleBackColor = true;
-            this.delete.Click += new System.EventHandler(this.delete_Click);
+            this.delete.MouseDown += new System.Windows.Forms.MouseEventHandler(this.delete_MouseDown);
             // 
             // boxResultado
             // 
@@ -262,7 +262,7 @@ namespace WindowsFormsApplication1
             this.multiplication.TabIndex = 19;
             this.multiplication.Text = "mul";
             this.multiplication.UseVisualStyleBackColor = true;
-            this.multiplication.Click += new System.EventHandler(this.multiplication_Click);
+            this.multiplication.MouseDown += new System.Windows.Forms.MouseEventHandler(this.multiplication_MouseDown);
             // 
             // Form1
             // 
