@@ -38,9 +38,11 @@
             this.a8 = new System.Windows.Forms.Button();
             this.a4 = new System.Windows.Forms.Button();
             this.a7 = new System.Windows.Forms.Button();
-            this.equals = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.equals = new System.Windows.Forms.Button();
+            this.sub = new System.Windows.Forms.Button();
+            this.a0 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,12 +81,14 @@
             // 
             // a3
             // 
+            this.a3.BackColor = System.Drawing.Color.Transparent;
+            this.a3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.a3.Location = new System.Drawing.Point(206, 635);
             this.a3.Name = "a3";
             this.a3.Size = new System.Drawing.Size(46, 31);
             this.a3.TabIndex = 5;
             this.a3.Text = "3";
-            this.a3.UseVisualStyleBackColor = true;
+            this.a3.UseVisualStyleBackColor = false;
             this.a3.Click += new System.EventHandler(this.a3_Click);
             // 
             // a6
@@ -147,16 +151,6 @@
             this.a7.UseVisualStyleBackColor = true;
             this.a7.Click += new System.EventHandler(this.a7_Click);
             // 
-            // equals
-            // 
-            this.equals.Location = new System.Drawing.Point(326, 691);
-            this.equals.Name = "equals";
-            this.equals.Size = new System.Drawing.Size(45, 31);
-            this.equals.TabIndex = 12;
-            this.equals.Text = "equal";
-            this.equals.UseVisualStyleBackColor = true;
-            this.equals.Click += new System.EventHandler(this.equals_Click);
-            // 
             // richTextBox1
             // 
             this.richTextBox1.Font = new System.Drawing.Font("Courier New", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -179,13 +173,51 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // equals
+            // 
+            this.equals.BackColor = System.Drawing.Color.Transparent;
+            this.equals.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.equals.Location = new System.Drawing.Point(325, 689);
+            this.equals.Margin = new System.Windows.Forms.Padding(0);
+            this.equals.Name = "equals";
+            this.equals.Size = new System.Drawing.Size(45, 31);
+            this.equals.TabIndex = 14;
+            this.equals.Text = "equal";
+            this.equals.UseVisualStyleBackColor = false;
+            this.equals.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // sub
+            // 
+            this.sub.BackColor = System.Drawing.Color.Transparent;
+            this.sub.Location = new System.Drawing.Point(324, 633);
+            this.sub.Margin = new System.Windows.Forms.Padding(0);
+            this.sub.Name = "sub";
+            this.sub.Size = new System.Drawing.Size(46, 33);
+            this.sub.TabIndex = 15;
+            this.sub.Text = "sub";
+            this.sub.UseVisualStyleBackColor = false;
+            this.sub.Click += new System.EventHandler(this.sub_Click);
+            // 
+            // a0
+            // 
+            this.a0.BackColor = System.Drawing.Color.Transparent;
+            this.a0.Location = new System.Drawing.Point(84, 689);
+            this.a0.Name = "a0";
+            this.a0.Size = new System.Drawing.Size(42, 31);
+            this.a0.TabIndex = 16;
+            this.a0.Text = "0";
+            this.a0.UseVisualStyleBackColor = false;
+            this.a0.Click += new System.EventHandler(this.a0_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(748, 778);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.a0);
+            this.Controls.Add(this.sub);
             this.Controls.Add(this.equals);
+            this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.a7);
             this.Controls.Add(this.a4);
             this.Controls.Add(this.a8);
@@ -217,8 +249,10 @@
         private System.Windows.Forms.Button a8;
         private System.Windows.Forms.Button a4;
         private System.Windows.Forms.Button a7;
-        private System.Windows.Forms.Button equals;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Button equals;
+        private System.Windows.Forms.Button sub;
+        private System.Windows.Forms.Button a0;
     }
 }
 

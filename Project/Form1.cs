@@ -28,7 +28,10 @@ namespace WindowsFormsApplication1
             Controls.Add(a7);
             Controls.Add(a8);
             Controls.Add(a9);
+            Controls.Add(a0);
             Controls.Add(sum);
+            Controls.Add(sub);
+            Controls.Add(equals);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -86,16 +89,26 @@ namespace WindowsFormsApplication1
             richTextBox1.Text += "+";
         }
 
-        private void equals_Click(object sender, EventArgs e)
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
             /*Implementação Loka*/
             Parser p = new Parser(richTextBox1.Text.ToString());
             richTextBox1.Text = p.getValue().ToString();
         }
 
-        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        private void sub_Click(object sender, EventArgs e)
         {
+            richTextBox1.Text += "-";
+        }
 
+        private void a0_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Text += "0";
         }
 
         //public void InitCustomLabelFont()
