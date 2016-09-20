@@ -8,14 +8,14 @@ namespace WindowsFormsApplication1
 {
     public class Parser
     {
-        private int value;
+        private int value = 0;
         private string text;
 
         public Parser(string text)
         {
             //Por enquanto somente soma
             this.text = text;
-            Sum_Sub();
+            Sum_Sub(this.text);
         }
 
         public int getValue()
@@ -23,11 +23,11 @@ namespace WindowsFormsApplication1
             return value;
         }
 
-        private void Sum_Sub()
+        private int Sum_Sub(string text)
         {
             /*Implementação Loka*/
             string[] numbersToSum = text.Split('+');
-            value = 0;
+            int value = 0;
             bool swap = false; //guarda o último sinal do sum anterior
 
             foreach (string sum in numbersToSum)
@@ -67,9 +67,9 @@ namespace WindowsFormsApplication1
                     if (!numbersForSub[i].Equals(""))
                     {
                         if (wasNegative)
-                            value_sub += Int32.Parse(numbersForSub[i]);
+                            value_sub += Mul_Div(numbersForSub[i]);
                         else
-                            value_sub -= Int32.Parse(numbersForSub[i]);
+                            value_sub -= Mul_Div(numbersForSub[i]);
                         wasNegative = false;
                     }
                     else if (i != 0)
@@ -77,13 +77,29 @@ namespace WindowsFormsApplication1
                 }
 
                 if(!numbersForSub[0].Equals(""))
-                    value_sub += 2 * Int32.Parse(numbersForSub[0]);
+                    value_sub += 2 * Mul_Div(numbersForSub[0]);
                 if (swap)
                     value -= value_sub;
                 else
                     value += value_sub;
                 swap = wasNegative;
             }
+            this.value = value;
+            return this.value;
+        }
+
+        private int Mul_Div(string text)
+        {
+            string[] numbersToMul = text.Split('*');
+            int value = Int32.Parse(numbersToMul[0]);
+            numbersToMul = numbersToMul.Skip(1).ToArray();
+
+            foreach(string mul in numbersToMul)
+            {
+                value *= Int32.Parse(mul);
+            }
+
+            return value;
         }
     }
 }
