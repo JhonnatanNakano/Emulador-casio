@@ -43,6 +43,8 @@
             this.sub = new System.Windows.Forms.Button();
             this.a0 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.AC = new System.Windows.Forms.Button();
+            this.delete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -156,10 +158,10 @@
             this.richTextBox1.Font = new System.Drawing.Font("Courier New", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1.Location = new System.Drawing.Point(94, 165);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(220, 44);
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.Size = new System.Drawing.Size(235, 44);
             this.richTextBox1.TabIndex = 13;
             this.richTextBox1.Text = "";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged);
             // 
             // equals
             // 
@@ -172,7 +174,7 @@
             this.equals.TabIndex = 14;
             this.equals.Text = "equal";
             this.equals.UseVisualStyleBackColor = false;
-            this.equals.Click += new System.EventHandler(this.button1_Click);
+            this.equals.Click += new System.EventHandler(this.equals_Click);
             // 
             // sub
             // 
@@ -209,11 +211,33 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // AC
+            // 
+            this.AC.Location = new System.Drawing.Point(333, 523);
+            this.AC.Name = "AC";
+            this.AC.Size = new System.Drawing.Size(46, 31);
+            this.AC.TabIndex = 17;
+            this.AC.Text = "AC";
+            this.AC.UseVisualStyleBackColor = true;
+            this.AC.Click += new System.EventHandler(this.AC_Click);
+            // 
+            // delete
+            // 
+            this.delete.Location = new System.Drawing.Point(270, 523);
+            this.delete.Name = "delete";
+            this.delete.Size = new System.Drawing.Size(44, 31);
+            this.delete.TabIndex = 18;
+            this.delete.Text = "DEL";
+            this.delete.UseVisualStyleBackColor = true;
+            this.delete.Click += new System.EventHandler(this.delete_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(748, 778);
+            this.Controls.Add(this.delete);
+            this.Controls.Add(this.AC);
             this.Controls.Add(this.a0);
             this.Controls.Add(this.sub);
             this.Controls.Add(this.equals);
@@ -253,6 +277,8 @@
         private System.Windows.Forms.Button equals;
         private System.Windows.Forms.Button sub;
         private System.Windows.Forms.Button a0;
+        private System.Windows.Forms.Button AC;
+        private System.Windows.Forms.Button delete;
     }
 }
 
