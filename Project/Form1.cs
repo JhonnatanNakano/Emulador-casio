@@ -45,6 +45,7 @@ namespace WindowsFormsApplication1
             Controls.Add(sum);
             Controls.Add(sub);
             Controls.Add(multiplication);
+            Controls.Add(division);
 
             //Controle
             Controls.Add(AC);
@@ -358,6 +359,25 @@ namespace WindowsFormsApplication1
             {
                 boxSuporte.Text = "Multiplicação: Utilizado para multiplicar dois termos" +
                     "\n\nExemplo: 2 * 2, 2/3 * 3.14, ans * 4, √2 * sin 63°52'41";
+            }
+        }
+
+        private void division_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                if (!equal_clicked)
+                    boxEquacao.Text += "/";
+                else
+                {
+                    boxEquacao.Text = boxResultado.Text + "/";
+                    equal_clicked = false;
+                }
+            }
+            else if (e.Button == MouseButtons.Right)
+            {
+                //boxSuporte.Text = "Multiplicação: Utilizado para multiplicar dois termos" +
+                //    "\n\nExemplo: 2 * 2, 2/3 * 3.14, ans * 4, √2 * sin 63°52'41";
             }
         }
 
