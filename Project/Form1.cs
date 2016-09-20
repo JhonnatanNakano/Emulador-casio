@@ -120,12 +120,13 @@ namespace WindowsFormsApplication1
         private void AC_Click(object sender, EventArgs e)
         {
             richTextBox1.Text = "";
+            boxResultado.Text = "0";
         }
 
         private void delete_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text = 
-            richTextBox1.Text.Remove(richTextBox1.Text.Length - 1);
+            if(richTextBox1.TextLength>0)
+                richTextBox1.Text = richTextBox1.Text.Remove(richTextBox1.Text.Length - 1);
         }
 
         private void multiplication_Click(object sender, EventArgs e)

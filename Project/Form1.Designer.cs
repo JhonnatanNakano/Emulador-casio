@@ -250,7 +250,7 @@ namespace WindowsFormsApplication1
             this.boxResultado.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
             this.boxResultado.Size = new System.Drawing.Size(274, 39);
             this.boxResultado.TabIndex = 19;
-            this.boxResultado.Text = "";
+            this.boxResultado.Text = "0";
             this.boxResultado.WordWrap = false;
             this.boxResultado.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
             // 
