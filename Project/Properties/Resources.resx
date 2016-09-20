@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="calc21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calc2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="digital7italic" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\digital7italic.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -127,7 +130,7 @@
   <data name="The_Display_St" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\The Display St.ttf;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="calc21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calc2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rightpanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rightpanel1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

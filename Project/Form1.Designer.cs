@@ -44,12 +44,15 @@ namespace WindowsFormsApplication1
             this.equals = new System.Windows.Forms.Button();
             this.sub = new System.Windows.Forms.Button();
             this.a0 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.AC = new System.Windows.Forms.Button();
             this.delete = new System.Windows.Forms.Button();
             this.boxResultado = new System.Windows.Forms.RichTextBox();
             this.multiplication = new System.Windows.Forms.Button();
             this.negative = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.boxSuporte = new System.Windows.Forms.RichTextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -207,18 +210,6 @@ namespace WindowsFormsApplication1
             this.a0.UseVisualStyleBackColor = false;
             this.a0.MouseDown += new System.Windows.Forms.MouseEventHandler(this.a0_MouseDown);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Enabled = false;
-            this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.calc21;
-            this.pictureBox1.Location = new System.Drawing.Point(2, -6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(468, 784);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
-            // 
             // AC
             // 
             this.AC.Location = new System.Drawing.Point(333, 523);
@@ -274,11 +265,50 @@ namespace WindowsFormsApplication1
             this.negative.UseVisualStyleBackColor = true;
             this.negative.MouseDown += new System.Windows.Forms.MouseEventHandler(this.negative_MouseDown);
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::WindowsFormsApplication1.Properties.Resources.rightpanel;
+            this.pictureBox2.Location = new System.Drawing.Point(461, -6);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(283, 784);
+            this.pictureBox2.TabIndex = 21;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Enabled = false;
+            this.pictureBox1.Image = global::WindowsFormsApplication1.Properties.Resources.calc21;
+            this.pictureBox1.Location = new System.Drawing.Point(2, -6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(468, 784);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseDown);
+            // 
+            // boxSuporte
+            // 
+            this.boxSuporte.BackColor = System.Drawing.SystemColors.Window;
+            this.boxSuporte.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.boxSuporte.Font = new System.Drawing.Font("Lucida Sans Unicode", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boxSuporte.Location = new System.Drawing.Point(481, 73);
+            this.boxSuporte.Name = "boxSuporte";
+            this.boxSuporte.ReadOnly = true;
+            this.boxSuporte.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.boxSuporte.Size = new System.Drawing.Size(239, 661);
+            this.boxSuporte.TabIndex = 22;
+            this.boxSuporte.Text = "Pressione com o botão direito em qualquer botão para ver sua definição e exemplos" +
+    " de uso.";
+            this.boxSuporte.TextChanged += new System.EventHandler(this.boxSuporte_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(748, 778);
+            this.Controls.Add(this.boxSuporte);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.negative);
             this.Controls.Add(this.boxResultado);
             this.Controls.Add(this.multiplication);
@@ -301,6 +331,7 @@ namespace WindowsFormsApplication1
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -328,6 +359,8 @@ namespace WindowsFormsApplication1
         private System.Windows.Forms.RichTextBox boxResultado;
         private System.Windows.Forms.Button multiplication;
         private Button negative;
+        private PictureBox pictureBox2;
+        private RichTextBox boxSuporte;
     }
 }
 

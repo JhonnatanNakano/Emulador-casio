@@ -49,6 +49,8 @@ namespace WindowsFormsApplication1
             Controls.Add(AC);
             Controls.Add(delete);
             Controls.Add(equals);
+
+
         }
 
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
@@ -60,8 +62,9 @@ namespace WindowsFormsApplication1
         {
             if (e.Button == MouseButtons.Left)
                 boxEquacao.Text += "1";
-            else if (e.Button == MouseButtons.Right)
-                boxEquacao.Text += "0";
+            //else if (e.Button == MouseButtons.Right)
+            //toolTip1.Show("teste", a1);
+            //toolTip1.SetToolTip(sender as Control, "Some text in balloon!");
         }
 
         private void a2_MouseDown(object sender, MouseEventArgs e)
@@ -122,6 +125,11 @@ namespace WindowsFormsApplication1
         {
             if (e.Button == MouseButtons.Left)
                 boxEquacao.Text += "+";
+            else if(e.Button == MouseButtons.Right)
+            {
+                boxSuporte.Text = "Soma: Utilizado para somar dois termos" +
+                    "\n\nExemplo: 2 + 2, 2 / 3 + 3.14, ans + 4, √2 + sin 63°52'41";
+            }
         }
 
         private void sub_MouseDown(object sender, MouseEventArgs e)
@@ -160,6 +168,11 @@ namespace WindowsFormsApplication1
         {
             if (e.Button == MouseButtons.Left)
                 boxEquacao.Text += "*";
+            else if (e.Button == MouseButtons.Right)
+            {
+                boxSuporte.Text = "Multiplicação: Utilizado para multiplicar dois termos" +
+                    "\n\nExemplo: 2 * 2, 2/3 * 3.14, ans * 4, √2 * sin 63°52'41";
+            }
         }
 
         private void negative_MouseDown(object sender, MouseEventArgs e)
@@ -167,7 +180,14 @@ namespace WindowsFormsApplication1
             boxEquacao.Text += "(-)";
         }
 
+        private void toolTip1_Popup(object sender, PopupEventArgs e)
+        {
 
-        
+        }
+
+        private void boxSuporte_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
