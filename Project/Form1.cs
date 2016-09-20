@@ -59,75 +59,75 @@ namespace WindowsFormsApplication1
         private void a1_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
-                richTextBox1.Text += "1";
+                boxEquacao.Text += "1";
             else if (e.Button == MouseButtons.Right)
-                richTextBox1.Text += "0";
+                boxEquacao.Text += "0";
         }
 
         private void a2_MouseDown(object sender, MouseEventArgs e)
         {
             if(e.Button == MouseButtons.Left)
-                richTextBox1.Text += "2";
+                boxEquacao.Text += "2";
         }
 
         private void a3_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
-                richTextBox1.Text += "3";
+                boxEquacao.Text += "3";
         }
 
         private void a4_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
-                richTextBox1.Text += "4";
+                boxEquacao.Text += "4";
         }
 
         private void a5_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
-                richTextBox1.Text += "5";
+                boxEquacao.Text += "5";
         }
 
         private void a6_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
-                richTextBox1.Text += "6";
+                boxEquacao.Text += "6";
         }
 
         private void a7_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
-                richTextBox1.Text += "7";
+                boxEquacao.Text += "7";
         }
 
         private void a8_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
-                richTextBox1.Text += "8";
+                boxEquacao.Text += "8";
         }
 
         private void a9_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
-                richTextBox1.Text += "9";
+                boxEquacao.Text += "9";
         }
 
         private void a0_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
-                richTextBox1.Text += "0";
+                boxEquacao.Text += "0";
         }
 
         private void sum_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
-                richTextBox1.Text += "+";
+                boxEquacao.Text += "+";
         }
 
         private void sub_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
-                richTextBox1.Text += "-";
+                boxEquacao.Text += "-";
         }
 
         private void equals_MouseDown(object sender, MouseEventArgs e)
@@ -142,7 +142,7 @@ namespace WindowsFormsApplication1
         {
             if (e.Button == MouseButtons.Left)
             {
-                richTextBox1.Text = "";
+                boxEquacao.Text = "";
                 boxResultado.Text = "0";
             }
         }
@@ -151,18 +151,18 @@ namespace WindowsFormsApplication1
         {
             if (e.Button == MouseButtons.Left)
             {
-                if (richTextBox1.TextLength > 0)
-                    richTextBox1.Text = richTextBox1.Text.Remove(richTextBox1.Text.Length - 1);
+                if (boxEquacao.TextLength > 0)
+                    boxEquacao.Text = boxEquacao.Text.Remove(boxEquacao.Text.Length - 1);
             }
         }
 
         private void multiplication_MouseDown(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
-                richTextBox1.Text += "*";
+                boxEquacao.Text += "*";
         }
 
-        private void negative_Click(object sender, EventArgs e)
+        private void negative_MouseDown(object sender, MouseEventArgs e)
         {
             boxEquacao.Text += "(-)";
         }

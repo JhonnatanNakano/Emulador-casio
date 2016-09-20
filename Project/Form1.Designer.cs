@@ -272,7 +272,7 @@ namespace WindowsFormsApplication1
             this.negative.TabIndex = 20;
             this.negative.Text = "(--)";
             this.negative.UseVisualStyleBackColor = true;
-            this.negative.Click += new System.EventHandler(this.negative_Click);
+            this.negative.MouseDown += new System.Windows.Forms.MouseEventHandler(this.negative_MouseDown);
             // 
             // Form1
             // 
