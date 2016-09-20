@@ -25,7 +25,7 @@ namespace WindowsFormsApplication1
             boxEquacao.Font = new Font(pfc.Families[0], 22, FontStyle.Regular);
             boxResultado.Font = new Font(pfc.Families[0], 28, FontStyle.Regular);
 
-
+            //Algarismos
             Controls.Add(a1);
             Controls.Add(a2);
             Controls.Add(a3);
@@ -36,9 +36,16 @@ namespace WindowsFormsApplication1
             Controls.Add(a8);
             Controls.Add(a9);
             Controls.Add(a0);
+
+            //Sinal
+            Controls.Add(negative);
+
+            //Aritmetico
             Controls.Add(sum);
             Controls.Add(sub);
             Controls.Add(multiplication);
+
+            //Controle
             Controls.Add(AC);
             Controls.Add(delete);
             Controls.Add(equals);
@@ -132,6 +139,11 @@ namespace WindowsFormsApplication1
         private void multiplication_Click(object sender, EventArgs e)
         {
             boxEquacao.Text += "*";
+        }
+
+        private void negative_Click(object sender, EventArgs e)
+        {
+            boxEquacao.Text += "(-)";
         }
     }
 }

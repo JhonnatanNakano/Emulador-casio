@@ -23,6 +23,12 @@ namespace WindowsFormsApplication1
             return value;
         }
 
+        private string procura_negativo(string text)
+        {
+
+            return null;
+        }
+
         private int Sum_Sub(string text)
         {
             /*Implementação Loka*/

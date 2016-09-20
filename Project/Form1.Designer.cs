@@ -49,6 +49,7 @@ namespace WindowsFormsApplication1
             this.delete = new System.Windows.Forms.Button();
             this.boxResultado = new System.Windows.Forms.RichTextBox();
             this.multiplication = new System.Windows.Forms.Button();
+            this.negative = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -263,11 +264,22 @@ namespace WindowsFormsApplication1
             this.multiplication.UseVisualStyleBackColor = true;
             this.multiplication.Click += new System.EventHandler(this.multiplication_Click);
             // 
+            // negative
+            // 
+            this.negative.Location = new System.Drawing.Point(82, 423);
+            this.negative.Name = "negative";
+            this.negative.Size = new System.Drawing.Size(32, 23);
+            this.negative.TabIndex = 20;
+            this.negative.Text = "(--)";
+            this.negative.UseVisualStyleBackColor = true;
+            this.negative.Click += new System.EventHandler(this.negative_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(748, 778);
+            this.Controls.Add(this.negative);
             this.Controls.Add(this.boxResultado);
             this.Controls.Add(this.multiplication);
             this.Controls.Add(this.delete);
@@ -315,6 +327,7 @@ namespace WindowsFormsApplication1
         private System.Windows.Forms.Button delete;
         private System.Windows.Forms.RichTextBox boxResultado;
         private System.Windows.Forms.Button multiplication;
+        private Button negative;
     }
 }
 
