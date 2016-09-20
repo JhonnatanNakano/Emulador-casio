@@ -22,10 +22,10 @@ namespace WindowsFormsApplication1
             pfc.AddFontFile(System.IO.Path.Combine(Application.StartupPath, "Resources\\digital7italic.ttf"));
 
             //boxResultado.Font = new Font(pfc.Families[0], 22, FontStyle.Regular);
-            richTextBox1.Font = new Font(pfc.Families[0], 22, FontStyle.Regular);
+            boxEquacao.Font = new Font(pfc.Families[0], 22, FontStyle.Regular);
             boxResultado.Font = new Font(pfc.Families[0], 28, FontStyle.Regular);
 
-
+            //Algarismos
             Controls.Add(a1);
             Controls.Add(a2);
             Controls.Add(a3);
@@ -36,9 +36,16 @@ namespace WindowsFormsApplication1
             Controls.Add(a8);
             Controls.Add(a9);
             Controls.Add(a0);
+
+            //Sinal
+            Controls.Add(negative);
+
+            //Aritmetico
             Controls.Add(sum);
             Controls.Add(sub);
             Controls.Add(multiplication);
+
+            //Controle
             Controls.Add(AC);
             Controls.Add(delete);
             Controls.Add(equals);
@@ -126,7 +133,7 @@ namespace WindowsFormsApplication1
         private void equals_MouseDown(object sender, MouseEventArgs e)
         {
             /*Implementação Loka*/
-            Parser p = new Parser(richTextBox1.Text.ToString());
+            Parser p = new Parser(boxEquacao.Text.ToString());
             boxResultado.Text = p.getValue().ToString();
 
         }
@@ -155,9 +162,9 @@ namespace WindowsFormsApplication1
                 richTextBox1.Text += "*";
         }
 
-        private void richTextBox2_TextChanged(object sender, EventArgs e)
+        private void negative_Click(object sender, EventArgs e)
         {
-
+            boxEquacao.Text += "(-)";
         }
 
 

@@ -40,7 +40,7 @@ namespace WindowsFormsApplication1
             this.a8 = new System.Windows.Forms.Button();
             this.a4 = new System.Windows.Forms.Button();
             this.a7 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.boxEquacao = new System.Windows.Forms.RichTextBox();
             this.equals = new System.Windows.Forms.Button();
             this.sub = new System.Windows.Forms.Button();
             this.a0 = new System.Windows.Forms.Button();
@@ -49,6 +49,7 @@ namespace WindowsFormsApplication1
             this.delete = new System.Windows.Forms.Button();
             this.boxResultado = new System.Windows.Forms.RichTextBox();
             this.multiplication = new System.Windows.Forms.Button();
+            this.negative = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -157,18 +158,18 @@ namespace WindowsFormsApplication1
             this.a7.UseVisualStyleBackColor = true;
             this.a7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.a7_MouseDown);
             // 
-            // richTextBox1
+            // boxEquacao
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.White;
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Courier New", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(86, 129);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox1.Size = new System.Drawing.Size(292, 35);
-            this.richTextBox1.TabIndex = 13;
-            this.richTextBox1.Text = "";
+            this.boxEquacao.BackColor = System.Drawing.Color.White;
+            this.boxEquacao.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.boxEquacao.Font = new System.Drawing.Font("Courier New", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boxEquacao.Location = new System.Drawing.Point(86, 129);
+            this.boxEquacao.Name = "boxEquacao";
+            this.boxEquacao.ReadOnly = true;
+            this.boxEquacao.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.boxEquacao.Size = new System.Drawing.Size(292, 35);
+            this.boxEquacao.TabIndex = 13;
+            this.boxEquacao.Text = "";
             // 
             // equals
             // 
@@ -252,7 +253,6 @@ namespace WindowsFormsApplication1
             this.boxResultado.TabIndex = 19;
             this.boxResultado.Text = "0";
             this.boxResultado.WordWrap = false;
-            this.boxResultado.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
             // 
             // multiplication
             // 
@@ -264,11 +264,22 @@ namespace WindowsFormsApplication1
             this.multiplication.UseVisualStyleBackColor = true;
             this.multiplication.MouseDown += new System.Windows.Forms.MouseEventHandler(this.multiplication_MouseDown);
             // 
+            // negative
+            // 
+            this.negative.Location = new System.Drawing.Point(82, 423);
+            this.negative.Name = "negative";
+            this.negative.Size = new System.Drawing.Size(32, 23);
+            this.negative.TabIndex = 20;
+            this.negative.Text = "(--)";
+            this.negative.UseVisualStyleBackColor = true;
+            this.negative.Click += new System.EventHandler(this.negative_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(748, 778);
+            this.Controls.Add(this.negative);
             this.Controls.Add(this.boxResultado);
             this.Controls.Add(this.multiplication);
             this.Controls.Add(this.delete);
@@ -276,7 +287,7 @@ namespace WindowsFormsApplication1
             this.Controls.Add(this.a0);
             this.Controls.Add(this.sub);
             this.Controls.Add(this.equals);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.boxEquacao);
             this.Controls.Add(this.a7);
             this.Controls.Add(this.a4);
             this.Controls.Add(this.a8);
@@ -308,7 +319,7 @@ namespace WindowsFormsApplication1
         private System.Windows.Forms.Button a8;
         private System.Windows.Forms.Button a4;
         private System.Windows.Forms.Button a7;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox boxEquacao;
         private System.Windows.Forms.Button equals;
         private System.Windows.Forms.Button sub;
         private System.Windows.Forms.Button a0;
@@ -316,6 +327,7 @@ namespace WindowsFormsApplication1
         private System.Windows.Forms.Button delete;
         private System.Windows.Forms.RichTextBox boxResultado;
         private System.Windows.Forms.Button multiplication;
+        private Button negative;
     }
 }
 
