@@ -22,7 +22,7 @@ namespace WindowsFormsApplication1
             pfc.AddFontFile(System.IO.Path.Combine(Application.StartupPath, "Resources\\digital7italic.ttf"));
 
             //boxResultado.Font = new Font(pfc.Families[0], 22, FontStyle.Regular);
-            richTextBox1.Font = new Font(pfc.Families[0], 22, FontStyle.Regular);
+            boxEquacao.Font = new Font(pfc.Families[0], 22, FontStyle.Regular);
             boxResultado.Font = new Font(pfc.Families[0], 28, FontStyle.Regular);
 
 
@@ -51,108 +51,87 @@ namespace WindowsFormsApplication1
 
         private void a1_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text += "1";
+            boxEquacao.Text += "1";
         }
 
         private void a2_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text += "2";
+            boxEquacao.Text += "2";
         }
 
         private void a3_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text += "3";
+            boxEquacao.Text += "3";
         }
 
         private void a4_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text += "4";
+            boxEquacao.Text += "4";
         }
 
         private void a5_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text += "5";
+            boxEquacao.Text += "5";
         }
 
         private void a6_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text += "6";
+            boxEquacao.Text += "6";
         }
 
         private void a7_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text += "7";
+            boxEquacao.Text += "7";
         }
 
         private void a8_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text += "8";
+            boxEquacao.Text += "8";
         }
 
         private void a9_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text += "9";
+            boxEquacao.Text += "9";
         }
 
         private void a0_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text += "0";
+            boxEquacao.Text += "0";
         }
 
         private void sum_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text += "+";
+            boxEquacao.Text += "+";
         }
 
         private void sub_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text += "-";
+            boxEquacao.Text += "-";
         }
 
         private void equals_Click(object sender, EventArgs e)
         {
             /*Implementação Loka*/
-            Parser p = new Parser(richTextBox1.Text.ToString());
+            Parser p = new Parser(boxEquacao.Text.ToString());
             boxResultado.Text = p.getValue().ToString();
 
         }
 
         private void AC_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text = "";
+            boxEquacao.Text = "";
             boxResultado.Text = "0";
         }
 
         private void delete_Click(object sender, EventArgs e)
         {
-            if(richTextBox1.TextLength>0)
-                richTextBox1.Text = richTextBox1.Text.Remove(richTextBox1.Text.Length - 1);
+            if(boxEquacao.TextLength>0)
+                boxEquacao.Text = boxEquacao.Text.Remove(boxEquacao.Text.Length - 1);
         }
 
         private void multiplication_Click(object sender, EventArgs e)
         {
-            richTextBox1.Text += "*";
+            boxEquacao.Text += "*";
         }
-
-        private void richTextBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        //public void InitCustomLabelFont()
-        //{
-        //    PointF pointF = new PointF(10, 0);
-        //    SolidBrush solidBrush = new SolidBrush(Color.Black);
-
-        //    int count = 0;
-        //    string familyName = "";
-        //    string familyNameAndStyle;
-        //    FontFamily[] fontFamilies;
-        //    PrivateFontCollection privateFontCollection = new PrivateFontCollection();
-
-        //    privateFontCollection.AddFontFile("c:\users\jho\documents\visual studio 2013\Projects\WindowsFormsApplication1\WindowsFormsApplication1\Resources\The Display St.ttf");
-
-        //    richTextBox1.Font = new Font(privateFontCollection.Families[0], richTextBox1.Font.Size);
-        //}
     }
 }

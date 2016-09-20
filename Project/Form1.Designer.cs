@@ -40,7 +40,7 @@ namespace WindowsFormsApplication1
             this.a8 = new System.Windows.Forms.Button();
             this.a4 = new System.Windows.Forms.Button();
             this.a7 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.boxEquacao = new System.Windows.Forms.RichTextBox();
             this.equals = new System.Windows.Forms.Button();
             this.sub = new System.Windows.Forms.Button();
             this.a0 = new System.Windows.Forms.Button();
@@ -157,18 +157,18 @@ namespace WindowsFormsApplication1
             this.a7.UseVisualStyleBackColor = true;
             this.a7.Click += new System.EventHandler(this.a7_Click);
             // 
-            // richTextBox1
+            // boxEquacao
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.White;
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Courier New", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(86, 129);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.richTextBox1.Size = new System.Drawing.Size(292, 35);
-            this.richTextBox1.TabIndex = 13;
-            this.richTextBox1.Text = "";
+            this.boxEquacao.BackColor = System.Drawing.Color.White;
+            this.boxEquacao.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.boxEquacao.Font = new System.Drawing.Font("Courier New", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boxEquacao.Location = new System.Drawing.Point(86, 129);
+            this.boxEquacao.Name = "boxEquacao";
+            this.boxEquacao.ReadOnly = true;
+            this.boxEquacao.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.boxEquacao.Size = new System.Drawing.Size(292, 35);
+            this.boxEquacao.TabIndex = 13;
+            this.boxEquacao.Text = "";
             // 
             // equals
             // 
@@ -252,7 +252,6 @@ namespace WindowsFormsApplication1
             this.boxResultado.TabIndex = 19;
             this.boxResultado.Text = "0";
             this.boxResultado.WordWrap = false;
-            this.boxResultado.TextChanged += new System.EventHandler(this.richTextBox2_TextChanged);
             // 
             // multiplication
             // 
@@ -276,7 +275,7 @@ namespace WindowsFormsApplication1
             this.Controls.Add(this.a0);
             this.Controls.Add(this.sub);
             this.Controls.Add(this.equals);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.boxEquacao);
             this.Controls.Add(this.a7);
             this.Controls.Add(this.a4);
             this.Controls.Add(this.a8);
@@ -308,7 +307,7 @@ namespace WindowsFormsApplication1
         private System.Windows.Forms.Button a8;
         private System.Windows.Forms.Button a4;
         private System.Windows.Forms.Button a7;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox boxEquacao;
         private System.Windows.Forms.Button equals;
         private System.Windows.Forms.Button sub;
         private System.Windows.Forms.Button a0;
