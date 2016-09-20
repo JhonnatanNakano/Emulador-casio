@@ -14,7 +14,7 @@ namespace WindowsFormsApplication1
         public Parser(string text)
         {
             //Por enquanto somente soma
-            this.text = text;
+            this.text = procura_negativo(text);
             Sum_Sub(this.text);
         }
 
@@ -25,8 +25,40 @@ namespace WindowsFormsApplication1
 
         private string procura_negativo(string text)
         {
+            int i = text.IndexOf("(-)");
+            char[] aux;
+            while(i != -1)
+            {
+                aux = text.ToCharArray();
+                aux[i+1] = '_';
+                text = new string(aux);
+                i = text.IndexOf("(-)");
+            }
+            return text;
+        }
 
-            return null;
+        private int soma_negativos(string text)
+        {
+            text = text.Replace("(_)", "-");
+            string[] negativesNumbers = text.Split('-');
+            int value_neg = 0;
+            bool wasNegative = false;
+
+            for (int i = 0; i < negativesNumbers.Length; i++)
+            {
+                if (!negativesNumbers[i].Equals(""))
+                {
+                    if (wasNegative)
+                        value_neg += Int32.Parse(negativesNumbers[i]);
+                    else
+                        value_neg -= Int32.Parse(negativesNumbers[i]);
+                    wasNegative = false;
+                }
+                else if (i != 0)
+                    wasNegative ^= true;
+            }
+
+            return value_neg;
         }
 
         private int Sum_Sub(string text)
@@ -97,12 +129,29 @@ namespace WindowsFormsApplication1
         private int Mul_Div(string text)
         {
             string[] numbersToMul = text.Split('*');
-            int value = Int32.Parse(numbersToMul[0]);
-            numbersToMul = numbersToMul.Skip(1).ToArray();
+            //int value = Int32.Parse(numbersToMul[0]);
+            int i,value;
+            string aux;
+            i = numbersToMul[0].IndexOf("(_)");
 
+            if (i == -1)
+                value = Int32.Parse(numbersToMul[0]);
+            else
+            {
+                value = soma_negativos(numbersToMul[0]);
+            }
+            
+            numbersToMul = numbersToMul.Skip(1).ToArray();
+           
             foreach(string mul in numbersToMul)
             {
-                value *= Int32.Parse(mul);
+                i = mul.IndexOf("(_)");
+                if(i == -1)
+                    value *= Int32.Parse(mul);
+                else 
+                {
+                    value *= soma_negativos(mul);
+                }
             }
 
             return value;
